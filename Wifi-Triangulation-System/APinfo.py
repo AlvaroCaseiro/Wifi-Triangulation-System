@@ -31,7 +31,7 @@ def Distance(RSSI,A,n):
 
 
 import subprocess
-Process=subprocess.Popen(["iwlist","wlp2s0","scan"],stdout=subprocess.PIPE,universal_newlines=True)
+Process=subprocess.Popen(["iwlist","wlp8s0","scan"],stdout=subprocess.PIPE,universal_newlines=True)
 out,err=Process.communicate()
 new_l=out.split('\n')
 #print new_l
